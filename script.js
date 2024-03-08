@@ -3,6 +3,9 @@ class Animal{
 	constructor(species){
 		this.species = species;
 	}
+	get speecies(){
+		return this.species;
+	}
 	makeSound(){
 		console.log("The Golden Retriever makes a sound")
 	}
