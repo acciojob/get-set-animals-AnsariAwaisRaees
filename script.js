@@ -11,6 +11,9 @@ class Animal{
 	}
 }
 class Cat extends Animal{
+	constructor(species) {
+	    super(species);
+	}
 	purr(){
 		consle.log("purr");
 	}
