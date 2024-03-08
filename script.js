@@ -10,6 +10,11 @@ class Animal{
 		console.log("The Golden Retriever makes a sound")
 	}
 }
+class Dog extends Animal{
+	bark(){
+		console.log("woof");
+	}
+}
 class Cat extends Animal{
 	constructor(species) {
 	    super(species);
@@ -17,12 +22,11 @@ class Cat extends Animal{
 	purr(){
 		consle.log("purr");
 	}
-}
-class Dog extends Animal{
-	bark(){
-		console.log("woof");
+	makeSound() {
+	    console.log(`The ${this.species} makes a sound`);
 	}
 }
+
 // class Animal {
 // 	constructor (species){
 // 		this._species =species
